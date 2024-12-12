@@ -2,27 +2,26 @@
 
 ## Table of Contents
 
-- [Project Overview](Project-Overview)
-- [Data Source](Data-Source)
-- [Tools Used](Tools-Used)
-- [Data Cleaning](Data-Cleaning)
-- [Exploratory Data Analysis (EDA)](Exploratory-Data-Analysis(EDA))
-- [Decision Tree Classifer](Decision-Tree-Classifer)
-- [Random Forest Classifer](Random-Forest-Classifer)
-- [Support Vector Machine (SVM)](Support-Vector-Machine(SVM))
-- [Logistic Regression](Logistic-Regression)
-- [K-Nearest Neighbors(KNN)](K-Nearest-Neighbors(KNN))
-- [Gradient Boosting Classifier](Gradient-Boosting-Classifier)
-- [Results / Findings](Results-/Findings)
-- [Recommendations](Recommendations)
-- [References](References)
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools Used](#tools-used)
+- [Data Cleaning](#data-cleaning)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Decision Tree Classifer](#decision-tree-classifer)
+- [Random Forest Classifer](#random-forest-classifer)
+- [Support Vector Machine](#support-vector-machine)
+- [Logistic Regression](#logistic-regression)
+- [K-Nearest Neighbors](#k-nearest-neighbors)
+- [Gradient Boosting Classifier](#gradient-boosting-classifier)
+- [Recommendations](#recommendations)
+- [References](#references)
 
 ### Project Overview
 
 This project aims to predict customer churn using Machine Learning techniques. The dataset is imbalanced (90% non-churn, 10% churn), so strategies like resampling and feature engineering were applied to improve performance. Models such as Logistic Regression, Random Forest, and XGBoost were evaluated using metrics like Precision, Recall, and F1-Score.
 
 
-### Data Source
+### Data Sources
 
 The dataset for this project was obtained from Primo Academy Hackathon (customer_data.csv, churn_data.csv, historical_price_data.csv) . It includes customer demographics, account information, and usage details.
 
@@ -43,7 +42,7 @@ The dataset underwent thorough preprocessing to ensure quality and consistency:
 4. Feature Scaling: Standardized numerical features for model compatibility.
 5. Outlier Detection: Detected and addressed outliers to prevent skewed model performance.
 
-### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis
 
 EDA was conducted to understand the structure and relationships within the data, which included:
 - Summary Statistics: Generated descriptive statistics to understand distributions, central tendencies, and variance of numerical features.
@@ -67,7 +66,7 @@ model_smote_rf.fit(Xr_train,yr_train)
 y_pred_rf =model_smote_rf.predict(Xr_test)
 ~~~
 
-### Support Vector Machine (SVM)
+### Support Vector Machine
 
 ~~~jupyter
 svm_model = SVC(kernel='rbf', C=1.0, gamma='scale', random_state=100)
@@ -83,7 +82,7 @@ log_reg.fit(Xr_train, yr_train)
 y_pred_log = log_reg.predict(Xr_test)
 ~~~
 
-### K-Nearest Neighbors (KNN)
+### K-Nearest Neighbors
 
 ~~~jupyter
 knn_model = KNeighborsClassifier(n_neighbors=5)
