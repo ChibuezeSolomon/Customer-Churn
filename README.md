@@ -1,7 +1,6 @@
 # Customer Churn Prediction
 
 ## Table of Contents
-
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools Used](#tools-used)
@@ -13,6 +12,7 @@
 - [Logistic Regression](#logistic-regression)
 - [K-Nearest Neighbors](#k-nearest-neighbors)
 - [Gradient Boosting Classifier](#gradient-boosting-classifier)
+- [Power BI Dashboard](#power-bi-dashboard)
 - [Recommendations](#recommendations)
 - [References](#references)
 
@@ -32,6 +32,7 @@ The dataset for this project was obtained from Primo Academy Hackathon (customer
 - Scikit-Learn
 - Matplotlib
 - Seaborn
+- Power BI
 
 ### Data Cleaning
 
@@ -117,6 +118,12 @@ After evaluating multiple models, the following key insights were obtained:
 
    - Key features influencing churn predictions included monthly charges, account tenure, contract type, and tech support. Customers with month-to-month contracts and higher monthly charges had a higher likelihood of churning.
    - Customer tenure was a critical indicator, with shorter tenure customers more likely to churn, especially those with low tech support engagement.
+
+### Power BI Dashboard
+
+A Power BI dashboard was created to visualize key insights from the customer churn analysis.
+
+![Dashboard](https://github.com/user-attachments/assets/f800989e-0094-46c6-9799-6c26d3c4ec28)
 
 ### Recommendations
 
